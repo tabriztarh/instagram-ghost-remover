@@ -83,3 +83,6 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+#credentials file (avoid accidental commiting)
+credentials.py
