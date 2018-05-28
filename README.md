@@ -12,19 +12,17 @@ The tool will load all of your followers, all of your posts, all likes under the
 
 ## Usage (tried to make it easy for non savvy people)
 
-(note: when I say type "x", you will type x WITHOUT THE QUOTES)
-
  - Download this repo (this whole thing) as ZIP and unzip it.
  - Open your terminal. (On Mac: open the Terminal app, on Windows, open Command Prompt, on Linux, well you probably know what you are doing anyway ;))
- - Check Python version. (On Mac: type "python -V", on Windows, type "python". Press Enter. If you see something like Python 2.7 (I've tested on 2.7.10) great. If you get an error or see a Python 3.x version, download Python 2.7 (Google it). (Would it work with Python 3? Maybe, but I didn't test it.)
- - Go to the folder that you unzipped this repo from the terminal. (Type "cd full_path_to_your_folder", for example "cd C:\Downloads\instagram-ghost-remover" or "cd /Users/Name/Downloads/instagram-ghost-remover". Of course these are just examples. You can just type "cd " (with the space after it) and drag-drop your folder into the terminal window to paste the full path to it). Press Enter.
- - Type "pip install -r requirements-dev.txt". Press Enter. It may take about a minute to complete. When it stops downloading stuff and waits for you again, it's done.
- - Type "python start.py". Press Enter.
+ - Check Python version. (On Mac: type `python -V`, on Windows, type `python`. Press Enter. If you see something like Python 2.7 (I've tested on 2.7.10) great. If you get an error or see a Python 3.x version, download Python 2.7 (Google it). (Would it work with Python 3? Maybe, but I didn't test it.)
+ - Go to the folder that you unzipped this repo from the terminal. (Type `cd full_path_to_your_folder`, for example `cd C:\Downloads\instagram-ghost-remover` or `cd /Users/Name/Downloads/instagram-ghost-remover`. Of course these are just examples. You can just type `cd ` (with a space after it) and drag-drop your folder into the terminal window to paste the full path to it). Press Enter.
+ - Type `pip install -r requirements-dev.txt`. Press Enter. It may take about a minute to complete. When it stops downloading stuff and waits for you again, it's done.
+ - Type `python start.py`. Press Enter.
  - After that point, the whole thing is self explanatory. It will load a list of your followers, posts, likes your your posts, and comments on your posts. It may take a while (e.g. minutes, or about an hour or more if you've got lots of followers/posts etc). When it's done it will start blocking/unblocking those "ghost" followers that I explained earlier. You may stop (if you think it's enough or if you need to pause) when it starts blocking/unblocking by simply closing the terminal window.
 
  ## Warning
 
- The folder will contain your username and password in the file "credentials.py" and "credentials.pyc". Make sure those two files are safe from other people.
+ The folder will contain your username and password in the file `credentials.py` and `credentials.pyc`. Make sure those two files are safe from other people.
 
  ## Notes
 
@@ -38,7 +36,7 @@ The tool will load all of your followers, all of your posts, all likes under the
 
   - Open your terminal.
   - Go to the folder with the unzipped files again.
-  Type "python remove_ghost_followers.py". Press Enter. It should resume.
+  Type `python remove_ghost_followers.py`. Press Enter. It should resume.
 
 ---
 
