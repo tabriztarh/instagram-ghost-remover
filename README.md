@@ -30,6 +30,7 @@ The tool will load all of your followers, all of your posts, all likes under the
 
   - The tool may not load more than 1000 likes for a single post. In 99% of the cases, I think we can ignore it.
   - To avoid API limiting (Instagram doesn't allow too many actions in a short time) the tool waits randomly between blocks. If you get an API rate limit error, simply wait about an hour and run again.
+  - I am not a Python programmer, I'm just getting used to it. Some parts of the code may be terrible. Sorry for that :)
 
  ## Resuming after stopping
 
@@ -41,7 +42,7 @@ The tool will load all of your followers, all of your posts, all likes under the
 
 ---
 
-# Below is the original readme for Instagram Private API:
+# Below is the original readme for Instagram Private API (not written by me):
 
 # Instagram Private API
 
