@@ -1,3 +1,48 @@
+## Instagram Ghost Remover
+
+A tool that will remove followers that haven't liked or commented on a single post of yours.
+
+### Why?
+
+Even though people are trying to increase their follower count, the quality of their followers may decrease. It is not uncommon to see people with 50K followers but only ~1500 likes at their posts. This tool aims to remove low-quality followers from your account.
+
+### How does it work?
+
+The tool will load all of your followers, all of your posts, all likes under the posts and all comments under the posts. Then, it will count all the likes and comments under your posts from your followers. At the end of the process, if a follower does not have any likes or comments, they'll be marked as a ghost. Finally it will force them out of your follower list by blocking and unblocking them. The whole process may take minutes to days, depending on the number of your followers. You may pause and resume it though (in case you need to turn your computer off in the middle).
+
+## Usage (tried to make it easy for non savvy people)
+
+(note: when I say type "x", you will type x WITHOUT THE QUOTES)
+
+ - Download this repo (this whole thing) as ZIP and unzip it.
+ - Open your terminal. (On Mac: open the Terminal app, on Windows, open Command Prompt, on Linux, well you probably know what you are doing anyway ;))
+ - Check Python version. (On Mac: type "python -V", on Windows, type "python". Press Enter. If you see something like Python 2.7 (I've tested on 2.7.10) great. If you get an error or see a Python 3.x version, download Python 2.7 (Google it). (Would it work with Python 3? Maybe, but I didn't test it.)
+ - Go to the folder that you unzipped this repo from the terminal. (Type "cd full_path_to_your_folder", for example "cd C:\Downloads\instagram-ghost-remover" or "cd /Users/Name/Downloads/instagram-ghost-remover". Of course these are just examples. You can just type "cd " (with the space after it) and drag-drop your folder into the terminal window to paste the full path to it). Press Enter.
+ - Type "pip install -r requirements-dev.txt". Press Enter. It may take about a minute to complete. When it stops downloading stuff and waits for you again, it's done.
+ - Type "python start.py". Press Enter.
+ - After that point, the whole thing is self explanatory. It will load a list of your followers, posts, likes your your posts, and comments on your posts. It may take a while (e.g. minutes, or about an hour or more if you've got lots of followers/posts etc). When it's done it will start blocking/unblocking those "ghost" followers that I explained earlier. You may stop (if you think it's enough or if you need to pause) when it starts blocking/unblocking by simply closing the terminal window.
+
+ ## Warning
+
+ The folder will contain your username and password in the file "credentials.py" and "credentials.pyc". Make sure those two files are safe from other people.
+
+ ## Notes
+
+  - The tool may not load more than 1000 likes for a single post. In 99% of the cases, I think we can ignore it.
+  - To avoid API limiting (Instagram doesn't allow too many actions in a short time) the tool waits randomly between blocks. If you get an API rate limit error, simply wait about an hour and run again.
+
+ ## Resuming after stopping
+
+ If you've stopped the tool and want to resume:
+
+  - Open your terminal.
+  - Go to the folder with the unzipped files again.
+  Type "python remove_ghost_followers.py". Press Enter. It should resume.
+
+---
+
+# Below is the original readme for Instagram Private API:
+
 # Instagram Private API
 
 A Python wrapper for the Instagram private API with no 3rd party dependencies. Supports both the app and web APIs.
