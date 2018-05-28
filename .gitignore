@@ -86,3 +86,4 @@ target/
 
 #credentials file (avoid accidental commiting)
 credentials.py
+credentials.pyc
