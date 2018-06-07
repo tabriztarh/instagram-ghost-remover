@@ -34,12 +34,19 @@ while next_max_id:
 posts.sort(key=lambda x: x['pk'])
 
 for post in posts:
-   caption = post['caption']['text']
+   try:
+        caption = post['caption']['text']
+   except:
+        caption = ''
    media_id = int(post['pk'])
    code = post['code']
    comment_count = int(post['comment_count'])
    like_count = int(post['like_count'])
-   image_url = post['image_versions2']['candidates'][0]['url']
+   try:
+        image_url = post['image_versions2']['candidates'][0]['url']
+   except:
+        image_url = ''
+
    data = (media_id, code, like_count, comment_count, image_url)
    conn.execute('insert into posts values (?,?,?,?,?)', data)
 
