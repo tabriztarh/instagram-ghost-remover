@@ -35,7 +35,7 @@ for post in posts:
     next_max_id = results.get('next_max_id')
     while next_max_id:
         results = api.media_likers(post_id, max_id=next_max_id)
-        posts.extend(results.get('users', []))
+        likes.extend(results.get('users', []))
         next_max_id = results.get('next_max_id')
         
     print('%d likes fetched.' % len(likes))
